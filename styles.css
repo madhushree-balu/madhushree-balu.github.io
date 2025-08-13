@@ -35,7 +35,7 @@ body {
   transform: translateX(-50%);
   width: auto;
   backdrop-filter: blur(20px);
-  background: rgba(15, 23, 42, 0.9);
+  background: rgb(15 23 42 / 16%);
   border: 1px solid rgba(51, 65, 85, 0.5);
   border-radius: 50px;
   z-index: 1000;
@@ -45,7 +45,8 @@ body {
 }
 
 .navbar.scrolled {
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  backdrop-filter: blur(5px);
 }
 
 .navbar:hover {
