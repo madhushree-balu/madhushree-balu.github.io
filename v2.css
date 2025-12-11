@@ -38,7 +38,6 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     max-width: 100vw;
-    min-height: 700vh;
     overflow: hidden auto;
     font-family: 'clash grotesk', sans-serif;
     font-size: 16px;
@@ -371,12 +370,10 @@ div#skills {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     padding: 50px 40px;
     width: 100%;
     height: 100vh;
     margin-top: 50px;
-
     background: radial-gradient(at 50% 0%, #fff4, #fff3);
     backdrop-filter: blur(2px);
     box-shadow: inset 0 0 4px #fff, 0 0 20px #0002;
@@ -393,7 +390,7 @@ div#skills {
     justify-content: center;
     flex-direction: row;
     gap: 30px;
-    width: 100%;
+    width: fit-content;
     padding-top: 0px;
     overflow: hidden;
     height: 70vh;
@@ -479,4 +476,113 @@ span.tech-item {
     gap: 10px;
     font-size: 13px;
     font-family: consolas;
+}
+
+
+#contact h1 {
+    font-size: 100px;
+    color: #fff;
+}
+
+div#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    gap: 30px;
+    width: 100%;
+    background: linear-gradient(45deg, #eee, transparent);
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: radial-gradient(#ffffff, #e0e0e094);
+    border-radius: 30px;
+    height: 100px;
+    box-shadow: inset 0 0 20px 20px #fff, 0 0 20px #fff4;
+    overflow: hidden;
+    text-decoration: none;
+    width: 100px;
+    transition: .3s;
+}
+
+a.contanct {
+    color: #4755b6;
+    text-decoration: none;
+}
+
+.name {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: #4c516d;
+    color: #fff;
+}
+
+.contanct {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    color: #4755b6;
+    word-break: break-word;
+    padding: 10px;
+}
+.contact-card:hover {
+    width: 300px;
+}
+
+.name svg {
+    color: #fff;
+    fill: #fff;
+    width: 40px;
+    height: 40px;
+}
+
+.contact-card {
+    animation: contact-card-entry ease;
+    animation-timeline: view(block 80% 20%);
+    animation-fill-mode: both;
+    transition: .3s;
+}
+
+@keyframes contact-card-entry {
+    0% {
+        scale: 2;
+        opacity: 0
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+div#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: max(15vh, 100px) 0;
+    color: #363b5c;
+    font-weight: 400;
+    opacity: .77;
+    background: linear-gradient(45deg, #eee, transparent);
+    width: 100%;
 }
