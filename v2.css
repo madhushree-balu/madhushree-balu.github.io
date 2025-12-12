@@ -594,7 +594,7 @@ div#footer {
     width: 100vw;
     height: 100vh;
     background: rgba(140, 140, 140, 0.533);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(50px);
     display: flex;
     align-items: center;
     justify-content: center;
