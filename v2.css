@@ -221,6 +221,7 @@ h5,
 h6 {
     text-transform: lowercase;
     font-weight: 1000;
+    transition: .3s;
 }
 
 #about p {
@@ -235,6 +236,7 @@ h6 {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    transition: .3s;
 }
 
 .stat-item {
@@ -635,4 +637,19 @@ div#footer {
     opacity: 0;
     pointer-events: none;
     user-select: none;
+}
+
+@media screen and (
+    max-width: 1000px
+) {
+    h2 {
+        font-size: 64px;
+    }
+    #my-image img {
+        height: 65vh;
+        animation: none;
+    }
+    .about-stats {
+        scale: 0.7;
+    }
 }
